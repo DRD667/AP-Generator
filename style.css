@@ -13,9 +13,9 @@ body {
   animation: bgmove 60s ease-in-out infinite;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 721px) {
   body {
-    padding: 4em 2.5rem;
+    padding: 4rem 1.5rem;
   }
 }
 
@@ -114,8 +114,8 @@ button {
 }
 
 .modal {
-  height: 60vmin;
-  width: 60vmin;
+  height: 70vmin;
+  width: 70vmin;
   background-color: white;
   position: fixed;
   inset: 50%;
@@ -134,7 +134,8 @@ button {
   background-color: red;
   color: white;
   padding: 0.5em 1em;
-  border-radius: 5px;
+
+  border-radius: 10px;
 }
 
 .show {
