@@ -28,7 +28,6 @@ btn.addEventListener('click', function () {
   let nthTerm = 0;
   resultB.textContent = 'Sum : ';
   result.textContent = 'Series : ';
-  resultD.style.transform = 'scale(0)';
 
   if (Number(a.value) > Number(l.value)) {
     for (
@@ -38,7 +37,12 @@ btn.addEventListener('click', function () {
     ) {
       result.textContent += `${i}, `;
       k++;
-      findwhichTerm();
+      if (Number(tn.value) === i) {
+        resultD.textContent = `${tn.value} is in Term No. ${k} `;
+        resultD.style.transform = 'scale(1)';
+      }
+
+      if (Number(n.value) === i) console.log(i);
     }
   }
   if (Number(a.value) < Number(l.value)) {
@@ -48,8 +52,12 @@ btn.addEventListener('click', function () {
       i += Math.abs(Number(d.value))
     ) {
       result.textContent += `${i}, `;
+
       k++;
-      findwhichTerm();
+      if (Number(tn.value) === i) {
+        resultD.textContent = `${tn.value} is in Term ${k} `;
+        resultD.style.transform = 'scale(1)';
+      }
     }
     if (Number(d.value) < 0) {
       alert('d taken as positive');
@@ -63,11 +71,4 @@ btn.addEventListener('click', function () {
   resultB.style.transform = 'scale(1)';
   resultC.style.transform = 'scale(1)';
   popup.style.display = 'none';
-
-  function findwhichTerm() {
-    if (Number(tn.value) === i) {
-      resultD.textContent = `${tn.value} is in Term No. ${k} `;
-      resultD.style.transform = 'scale(1)';
-    }
-  }
 });
