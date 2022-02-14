@@ -68,6 +68,9 @@ btn.addEventListener('click', function () {
     if (Number(tn.value) === i) {
       resultD.textContent = `${tn.value} is in Term No. ${k} `;
       resultD.style.transform = 'scale(1)';
+    } else {
+      resultD.style.transform = 'scale(1)';
+      resultD.textContent = `${tn.value} does not exist in this AP  `;
     }
   }
 });
