@@ -17,24 +17,41 @@
       <div id="wrapper">
     <div class="col">
       <h1>AP Generator</h1>
-      <label for="a">
-        <h3>First Term (a)</h3>
-      </label>
-      <input type="number" id="a" />
-      <label for="l">
-        <h3>Last Term (l)</h3>
-      </label>
-      <input type="number" id="l" />
-      <label for="d">
-        <h3>Common Difference (d)</h3>
-      </label>
-      <input type="number" id="d" />
+             <div class="col-grid">
+               <div> <label for="a">
+                         <h3>First Term (a)</h3>
+                       </label>
+                       <input type="number" id="a" />
+                       </div>
+               <div> <label for="l">
+                         <h3>Last Term (l)</h3>
+                       </label>
+                       <input type="number" id="l" />
+                       </div>
+               <div class="cd"> <label for="d">
+                         <h3>Common Difference (d)</h3>
+                       </label>
+                       <input type="number" id="d" / placeholder="Minus Sign not required">
+                       </div>
+               <div>  <label for="n">
+                         <h3>Find the nth term (n)</h3>
+                       </label>
+                       <input type="number" id="n" / >
+                       </div>
+                       <div>  <label for="tn">
+                         <h3>Which term is (tn)</h3>
+                       </label>
+                       <input type="number" id="tn" / >
+                       </div>
+             </div>
       <br />
       <button class="submit">Submit</button>
     </div>
     <div class="col2">
       <p id="resultSeriesSum"></p>
       <p id="resultSeries"></p>
+      <p id="resultSeriesNthTerm"></p>
+      <p id="resultSeriesWhichTerm"></p>
       <div class="popup">Submit to see results.</div>
     </div>
     </div>
